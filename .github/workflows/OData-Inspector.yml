@@ -28,5 +28,7 @@ jobs:
       env:
         GREETINGS: 'Hello, .NET developers!' # ${{ secrets.GITHUB_TOKEN }}
       with:
-        branch: ${{ github.repository_owner }}
-        targetBranch: ${{ github.repository }}
+        branch: main
+        targetBranch: main
+        repoOwner: ${{ github.repository_owner }}
+        repoName: ${{ github.repository }}
