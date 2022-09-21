@@ -26,7 +26,7 @@ jobs:
       id: odata-inspector
       uses: paulodero/OData-Inspector@main
       env:
-        GREETINGS: 'Hello, .NET developers!' # ${{ secrets.GITHUB_TOKEN }}
+        GREETINGS: 'Hello, .NET developers!' #${{ secrets.GITHUB_TOKEN }}
       with:
         branch: main
         targetBranch: main
