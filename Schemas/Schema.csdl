@@ -7,6 +7,11 @@
         <Member Name="Female" Value="1" />
         <Member Name="Unknown" Value="2" />
       </EnumType>
+      <EnumType Name="TravelType">
+        <Member Name="Business" Value="0" />
+        <Member Name="Lesiure" Value="1" />
+        <Member Name="Unknown" Value="2" />
+      </EnumType>
       <ComplexType Name="City">
         <Property Name="CountryRegion" Type="Edm.String" Nullable="false" />
         <Property Name="Name" Type="Edm.String" Nullable="false" />
