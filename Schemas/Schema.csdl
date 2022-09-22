@@ -5,7 +5,10 @@
       <EnumType Name="PersonGender">
         <Member Name="Male" Value="0" />
         <Member Name="Female" Value="1" />
-        <Member Name="Unknown" Value="2" />
+      </EnumType>
+       <EnumType Name="TripType">
+        <Member Name="Business" Value="0" />
+        <Member Name="Leisure" Value="1" />
       </EnumType>
       <ComplexType Name="City">
         <Property Name="CountryRegion" Type="Edm.String" Nullable="false" />
@@ -13,6 +16,7 @@
         <Property Name="Region" Type="Edm.String" Nullable="false" />
       </ComplexType>
       <ComplexType Name="Location" OpenType="true">
+        <Property Name="Address" Type="Edm.String" Nullable="false" />
         <Property Name="Address" Type="Edm.String" Nullable="false" />
         <Property Name="City" Type="Microsoft.OData.SampleService.Models.TripPin.City" Nullable="false" />
       </ComplexType>
@@ -27,6 +31,9 @@
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false">
+          <Annotation Term="Org.OData.Core.V1.Permissions">
+            <EnumMember>Org.OData.Core.V1.Permission/Read</EnumMember>
+          </Annotation>
           <Annotation Term="Org.OData.Core.V1.Permissions">
             <EnumMember>Org.OData.Core.V1.Permission/Read</EnumMember>
           </Annotation>
