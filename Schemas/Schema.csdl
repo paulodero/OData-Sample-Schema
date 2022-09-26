@@ -11,6 +11,7 @@
             <Property Name="CountryRegion" Type="Edm.String" Nullable="false" />
             <Property Name="Name" Type="Edm.String" Nullable="false" />
             <Property Name="Region" Type="Edm.String" Nullable="false" />
+            <Property Name="Code" Type="Edm.String" Nullable="false" />
          </ComplexType>
          <ComplexType Name="Location" OpenType="true">
             <Property Name="Address" Type="Edm.String" Nullable="false" />
