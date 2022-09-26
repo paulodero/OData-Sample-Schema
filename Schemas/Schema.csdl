@@ -12,6 +12,7 @@
         <Member Name="Lesiure" Value="1" />
         <Member Name="Unknown" Value="2" />
        <Member Name="Conference" Value="4" />
+       <Member Name="Conference1" Value="4" />
       </EnumType>
       <ComplexType Name="City">
         <Property Name="CountryRegion" Type="Edm.String" Nullable="false" />
